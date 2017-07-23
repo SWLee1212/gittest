@@ -15,12 +15,13 @@ git local repository
 - 파일의 이력을 관리하기 위한 저장소 생성 필요
 - Git Local Repository는 폴더 형태로 [.git]이라는 폴더 명으로 생성됨
 - 해당 폴더로 이동하고, git init 실행하면 git repository가 생성됨
--
+
 
 3.2. Staging Are에 파일을 등록(tracking 파일 등록)
 - git이 최초에는 파일 상태를 추적하기 않음, untracked file 이라고 함
 - tracking 하려면 먼저 git에 등록 해야 함, tracking file로 등록되면 파일에 수정이 발생하면 git에서 확인할 수 있음
 - git add 파일 이름
+- 모든 등록 파일을 tracking 하려면 git add *
 - git status 로 git에 등록된 파일 확인 가능   ---> staged filed 로 등록됨, 변화가 생기면 추적 가능 tracking 시작함
 - tacking을 한다는 말은 git에서 file을 staged 했다고 표현함
 - 파일 작업 중 수정을 하고 상태를 저장하고 싶으면 git add 파일 이름을 해줘야 함
@@ -28,13 +29,14 @@ git local repository
 3.3. Git Repository로 파일을 등록 (파일을 Commnit )
 - 파일을 commnit 하려면
 git commit git_test.txt -m "First Commit"   ----> committed file로 등록됨, 버전 관리 프로그램으로 등록됨
-- commit한 후에 다시 수정하면 다시 tracking을 시작, git status에서 수정 했는지 여부 확인 가능
--------------------------
-gitignore 만들기
-.gitignore 파일을 만들고
-cmd 창에서 move( 또는 mv) .gitignore.txt .gitignore
+- commit한 후에 다시 수정하면 다시 tracking을 시작, git status에서 수정 했는지 여부 확인 가능, 다시 그 상태를 저장하려면
+ git add 파일 이름 해야 함
+- 새로운 버전으로 추가하려면 git commit 파일이름 -m "버전 이름"
 
-.gitignore 파일에 등록된 파일은 git 무시 됨
+3.4. gitignore 파일 정하기
+- .gitignore 파일을 아래와 같이 만듬, 최초에는 txt로 형식으로 저장될 수 있기 때문에 아래와 같이 파일명을 바꿔야 함
+- cmd 창에서 move( 또는 mv) .gitignore.txt .gitignore
+- .gitignore 파일에 등록된 파일은 git 무시 됨
 
 git commit -m "Add .gitignore file"
 git rm test_abc.txt   window에서 remove와는 별개로 git에서 해줘야 함
