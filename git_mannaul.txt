@@ -26,9 +26,9 @@ git local repository
 - 파일 작업 중 수정을 하고 상태를 저장하고 싶으면 git add 파일 이름을 해줘야 함
 
 3.3. Git Repository로 파일을 등록 (파일을 Commnit )
-- git버전으로 등록하고 싶으면
+- 파일을 commnit 하려면
 git commit git_test.txt -m "First Commit"   ----> committed file로 등록됨, 버전 관리 프로그램으로 등록됨
-
+- commit한 후에 다시 수정하면 다시 tracking을 시작, git status에서 수정 했는지 여부 확인 가능
 -------------------------
 gitignore 만들기
 .gitignore 파일을 만들고
