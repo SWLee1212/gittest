@@ -37,22 +37,24 @@ git commit git_test.txt -m "First Commit"   ----> committed file로 등록됨, �
 - .gitignore 파일을 아래와 같이 만듬, 최초에는 txt로 형식으로 저장될 수 있기 때문에 아래와 같이 파일명을 바꿔야 함
 - cmd 창에서 move( 또는 mv) .gitignore.txt .gitignore
 - .gitignore 파일에 등록된 파일은 git 무시 됨
-
 git commit -m "Add .gitignore file"
-git rm test_abc.txt   window에서 remove와는 별개로 git에서 해줘야 함
 
-파일 변경 시
-git mv git_test.txt test.txt
+3.5 commit 된 상태의 파일을 지우기
+- git rm test_abc.txt   window에서 remove와는 별개로 git에서 해줘야 함
+- 다만 git에 등록된 파일만 삭제 가능?
 
-이후 git status에서 파일 변경 사항 확인 가능
+3.6 파일 이름 변경 시
+- git mv git_test.txt test.txt
+- 이후 git status에서 파일 변경 사항 확인 가능
 
-git log 하면 이력 확인 가능
-git log --stat
-git log --pretty=oneline
-git log --pretty=format : "%h - %an, %ar :%s"
-git log --pretty=format : "%h - %an, %ar :%s" --graph
+3.7 commit한 상태로 돌아가기
+3.7.1 git log 하면 이력 확인 가능
+git log --stat      ---> 수정 정보를 확인 가능하고 마지막에 q를 누르면 빠져나감
+git log --pretty=oneline  ---> 한줄에 다 log 메시지와 코드 번호를 보여줌
+git log --pretty=format : "%h - %an, %ar :%s"   ---> 날짜 정보를 보여줌
+git log --pretty=format : "%h - %an, %ar :%s" --graph ---> 그래프로 보여줌
 
-이전 상태로 돌아가기
+3.7.2 이전 상태로 돌아가기
 git checkout "log번호"
 다시 원래 상태로 돌아 가려면 git checkout
 
