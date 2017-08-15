@@ -1,0 +1,40 @@
+1. anaconda : python 파운데이션에서 만든 공식 python 통합 패키지가 아닌
+개발자들이 모여서 만든 python 통합 패키지 파일
+- 과학 계산용 Python 통합 배포판이고 축소판 이름이 Miniconda
+- miniconda는 anaconda 중 일부 패키지만 뽑아서 만든 통합 패키지
+설치방법 : google에서 miniconda 검색 후 내 pc 버전에 받는 것을 설치 python 3.5
+
+-
+2. 내 PC에서 가상환경 만들기
+-새로운 가상 환경 생성
+conda create -n my_or python=3.5
+-가상 환경 활성화/비활성화
+activate my_or/deactivate my_or
+* conda는 miniconda의 패키지 관리 프로그램임
+
+3. Jupyter IDE 설치
+-jupyter-데이터분석을 위한 python ide 설치(이전 이름은 ipython)
+설치 전에 나의 가사 환경에 들어가야 함 : activate my_or
+
+- Jupyter 설치 및 사용
+설치 : conda install jupyter
+실행 : jupyter notebook
+크롬에서 실행한다면 jupyter notebook에서 바로 코딩 가능, python shell에서 동일
+ctrl+엔터는 실행
+alt+엔터는 새로운 라인 추가
+ctrl+s 저장
+나가기는 file>>close & halt
+
+4. matplotlib 설치
+- matlablib 설치
+conda install matplotlib
+
+5. numpy 설치
+conda install numpy
+
+6. Gurobi
+- optimization 지원 상용 패키지의 교육용 배포판 이용
+
+7. autogrder 설치
+1. git 설치
+2. pip install git+https://github.com/Teamlab/or_mooc_autogrder

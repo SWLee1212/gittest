@@ -1,0 +1,15 @@
+model/modeling : 수학식으로 수학 모형으로 표현하는 것
+objective function : 풀고자 하는 문제의 성능을 측정할 수 있는 문제, 최대/최소화
+decision variables : 목적함수에 영향을 주는 변수
+contraints : decision variable이 가질 수 있는 한계
+parameter : constraints와 목적함수의 상수들을 모델의 매개 변수라고 함수
+
+static model
+linear model
+integer model
+deterministic model, stochastic model
+
+
+OR modeling
+현실의 문제를 추상화 or 일반화 함
+Abstarction and Generalization

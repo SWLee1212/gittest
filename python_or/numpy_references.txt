@@ -1,0 +1,6 @@
+References
+- cs231 : http://cs231n.github.io/python-numpy-tutorial/#numpy
+- https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
+- 데이터 사인언스스쿨 https://goo.gl/3hsjbS
+- Numpy https://goo.gl/7Nwjvv(w)
+- 파이썬 라이브러리를 활용한 데이터 분석
